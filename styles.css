@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url("https://images.unsplash.com/photo-1540747913346-19e32dc3e97e");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+header{
+    background: linear-gradient(to right, #0b1c3d, #1a2a6c);
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4); /* softer shadow */
+}
+.item{
+    background: #355698;
+    color: white;
+    flex:1;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container{
+    background-color: rgb(22, 6, 75);
+    padding: 20px;
+    display: flex-end;
+}
+.inlineblock{
+    background: linear-gradient(45deg, #3498db, #1abc9c);
+    color: white;
+    padding: 12px 25px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.inlineblock:hover{
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #bc3b73;
+    }
+a{
+    text-decoration: none;
+}
+.trophy{
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 40px;
+}
+
+
+.trophy img{
+    width: 200px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+footer{
+    text-align: center;
+    padding: 15px;
+    background: #111;
+}
+.welcome-section{
+    text-align: center;
+    padding: 8px 20px 40px 20px;
+}
+
+.welcome-section h1{
+    font-size: 55px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 8px rgba(0, 242, 255, 0.6); /* softer glow */
+}
+
+.welcome-section p{
+    font-size: 20px;
+    opacity: 0.9;
+}

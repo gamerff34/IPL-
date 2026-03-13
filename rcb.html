@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Royal Challengers Bengaluru Playing XI</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(-45deg,#000000,#b71c1c,#d32f2f,#880e4f);
+background-size:400% 400%;
+animation:bgmove 12s ease infinite;
+}
+
+@keyframes bgmove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+header{
+background:#000;
+}
+
+.navbar-brand{
+font-weight:700;
+color:#ffcc00;
+}
+
+h1{
+text-align:center;
+padding:25px;
+font-size:40px;
+color:white;
+}
+
+.players{
+padding:40px;
+}
+
+.card{
+border:none;
+border-radius:20px;
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(15px);
+text-align:center;
+transition:0.4s;
+color:white;
+}
+
+.card:hover{
+transform:translateY(-12px) scale(1.05);
+box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
+
+.card img{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+margin:15px auto;
+border:4px solid white;
+}
+
+.card h3{
+font-size:20px;
+margin-top:10px;
+}
+
+.card p{
+font-size:14px;
+color:#f5f5f5;
+}
+
+button{
+margin-top:10px;
+}
+
+footer{
+text-align:center;
+padding:15px;
+background:rgba(255,255,255,0.15);
+color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark container">
+
+<a class="navbar-brand" href="#">RCB Squad</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="ipl.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="teamss.html">Teams</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="points.html">Points</a>
+</li>
+
+</ul>
+
+</div>
+
+</nav>
+</header>
+
+<h1>Royal Challengers Bengaluru Playing XI</h1>
+
+<div class="container players">
+
+<div class="row g-4">
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://ipltable.in/wp-content/uploads/2024/03/image-45-700x700.jpeg">
+<h3>Faf du Plessis</h3>
+<p>Captain and aggressive opener</p>
+<button class="btn btn-danger" onclick="showPlayer('Faf du Plessis')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://i.pinimg.com/474x/79/40/54/794054afd7d178fc4693235da3e1417b.jpg">
+<h3>Virat Kohli</h3>
+<p>RCB legend and top order anchor</p>
+<button class="btn btn-danger" onclick="showPlayer('Virat Kohli')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJtqyJBHfsL7M4Vn9pthbqPEoSEPHP7IcTXg&s">
+<h3>Rajat Patidar</h3>
+<p>Dependable middle order batter</p>
+<button class="btn btn-danger" onclick="showPlayer('Rajat Patidar')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://ipltable.in/wp-content/uploads/2024/03/image-46-700x700.jpeg">
+<h3>Glenn Maxwell</h3>
+<p>Explosive all rounder</p>
+<button class="btn btn-danger" onclick="showPlayer('Glenn Maxwell')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1x3cvTR2n1ab-W6LhAwKcyUuHUuDMqzMiSw&s">
+<h3>Cameron Green</h3>
+<p>Power hitter and medium pace bowler</p>
+<button class="btn btn-danger" onclick="showPlayer('Cameron Green')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ7EgmJkgCRpcfBrFV0CXGx6bIKjtk5wEeVQ&s">
+<h3>Dinesh Karthik</h3>
+<p>Experienced wicketkeeper finisher</p>
+<button class="btn btn-danger" onclick="showPlayer('Dinesh Karthik')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://ipltable.in/wp-content/uploads/2024/03/image-55-700x700.jpeg">
+<h3>Mohammed Siraj</h3>
+<p>Strike fast bowler</p>
+<button class="btn btn-danger" onclick="showPlayer('Mohammed Siraj')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://www.iplcricketmatch.com/wp-content/uploads/2024/02/Reece-Topley-860x484.jpg">
+<h3>Reece Topley</h3>
+<p>Left arm pace bowler</p>
+<button class="btn btn-danger" onclick="showPlayer('Reece Topley')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://ipltable.in/wp-content/uploads/2024/03/image-51-700x700.jpeg">
+<h3>Karn Sharma</h3>
+<p>Leg spin specialist</p>
+<button class="btn btn-danger" onclick="showPlayer('Karn Sharma')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdgI8Q7IuLAhjYmI27V5i_tfDFJN8_dsW0xQ&s">
+<h3>Yash Dayal</h3>
+<p>Young left arm pacer</p>
+<button class="btn btn-danger" onclick="showPlayer('Yash Dayal')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaqHH3PskVdNJ5X2wzhWyCmQmuBlitduW1fw&s">
+<h3>Mahipal Lomror</h3>
+<p>Left handed all rounder</p>
+<button class="btn btn-danger" onclick="showPlayer('Mahipal Lomror')">Details</button>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Royal Challengers Bengaluru Fan Page
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+function showPlayer(name){
+alert(name + " is an important player for Royal Challengers Bengaluru.");
+}
+
+</script>
+
+</body>
+</html>

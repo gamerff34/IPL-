@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>IPL Teams</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+min-height:100vh;
+background:url(https://images.augustman.com/wp-content/uploads/sites/5/2023/04/20190504/untitled-design-2023-04-16t071319-214.jpeg);
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+header{
+width:100%;
+background:rgba(0,0,0,0.8);
+padding:10px 0;
+}
+
+.navbar-nav a{
+color:white;
+font-weight:500;
+}
+
+h1{
+margin:40px 0;
+font-size:48px;
+color:white;
+letter-spacing:4px;
+}
+
+.container-teams{
+width:90%;
+max-width:1200px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+padding-bottom:50px;
+}
+
+.team{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+border-radius:20px;
+padding:20px;
+text-align:center;
+transition:0.4s;
+cursor:pointer;
+}
+
+.team:hover{
+transform:translateY(-10px) scale(1.05);
+box-shadow:0 0 25px rgba(255,255,255,0.4);
+}
+
+.team img{
+width:100px;
+height:100px;
+object-fit:contain;
+}
+
+.team h2{
+margin-top:15px;
+font-size:18px;
+color:white;
+}
+
+.team:hover h2{
+color:#00f2ff;
+}
+
+.search-box{
+margin-bottom:30px;
+width:300px;
+}
+
+footer{
+width:100%;
+background:black;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:auto;
+}
+
+@media(max-width:768px){
+
+h1{
+font-size:34px;
+}
+
+.team img{
+width:80px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+
+<a class="navbar-brand" href="ipl.html">IPL Portal</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="ipl.html"target="_blank">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="teamss.html">Teams</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="schedule.html"target="_blank">Schedule</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="points.html"target="_blank">Points Table</a>
+</li>
+
+</ul>
+
+</div>
+</div>
+</nav>
+
+</header>
+
+<h1>IPL TEAMS</h1>
+
+<input type="text" class="form-control search-box" placeholder="Search Team..." onkeyup="searchTeams()">
+
+<div class="container-teams" id="teams">
+
+<div class="team">
+<a href="csk.html" target="_blank">
+<img src="https://img.freepik.com/premium-vector/chennai-super-kings-logo_760521-149.jpg">
+</a>
+<h2>Chennai Super Kings</h2>
+</div>
+
+<div class="team">
+<a href="mi.html" target="_blank">
+<img src="https://i.pinimg.com/736x/37/cd/d5/37cdd544a025e42fec5202a3d5b095c8.jpg">
+</a>
+<h2>Mumbai Indians</h2>
+</div>
+
+<div class="team">
+<a href="rcb.html" target="_blank">
+<img src="https://c.ndtvimg.com/2020-02/1r5vdst_rcb_625x300_14_February_20.jpg">
+</a>
+<h2>Royal Challengers Bengaluru</h2>
+</div>
+
+<div class="team">
+<a href="kkr.html" target="_blank">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn7qkiEmrmzvpFAPc3pIyYTJAMpkIjbp2hFQ&s">
+</a>
+<h2>Kolkata Knight Riders</h2>
+</div>
+
+<div class="team">
+<a href="dc.html" target="_blank">
+<img src="https://assets.designhill.com/design-blog/wp-content/uploads/2025/03/2-4.jpg">
+</a>
+<h2>Delhi Capitals</h2>
+</div>
+
+<div class="team">
+<a href="srh.html" target="_blank">
+<img src="https://yt3.googleusercontent.com/LFRFAbflaHNfroBZDP38wsZ2YFxTiTHnyU_W0fbHmwebsl8FE9qz1jDDtfCbXNPu8BnhGZKMNg=s900-c-k-c0x00ffffff-no-rj">
+</a>
+<h2>Sunrisers Hyderabad</h2>
+</div>
+
+<div class="team">
+<a href="rr.html" target="_blank">
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/This_is_the_logo_for_Rajasthan_Royals%2C_a_cricket_team_playing_in_the_Indian_Premier_League_%28IPL%29.svg/1280px-This_is_the_logo_for_Rajasthan_Royals%2C_a_cricket_team_playing_in_the_Indian_Premier_League_%28IPL%29.svg.png">
+</a>
+<h2>Rajasthan Royals</h2>
+</div>
+
+<div class="team">
+<a href="pbks.html" target="_blank">
+<img src="https://mir-s3-cdn-cf.behance.net/projects/404/614abb172278773.Y3JvcCwxNTAwLDExNzMsMCwxNA.png">
+</a>
+<h2>Punjab Kings</h2>
+</div>
+
+<div class="team">
+<a href="gt.html" target="_blank">
+<img src="https://imgk.timesnownews.com/story/Gujarat_Titans_logo.png">
+</a>
+<h2>Gujarat Titans</h2>
+</div>
+
+<div class="team">
+<a href="lsg.html" target="_blank">
+<img src="https://assets.designhill.com/design-blog/wp-content/uploads/2025/03/9-4.jpg">
+</a>
+<h2>Lucknow Super Giants</h2>
+</div>
+
+</div>
+
+<footer>
+© 2026 IPL Fan Portal
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+function searchTeams(){
+let input=document.querySelector(".search-box").value.toLowerCase()
+let teams=document.querySelectorAll(".team")
+
+teams.forEach(team=>{
+let text=team.innerText.toLowerCase()
+team.style.display=text.includes(input)?"block":"none"
+})
+}
+
+</script>
+
+</body>
+</html>

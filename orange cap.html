@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IPL 2026 Orange & Purple Cap</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background: linear-gradient(135deg,#ff6a00,#ee0979,#00c6ff,#0072ff);
+    background-size:400% 400%;
+    animation: bgMove 12s ease infinite;
+    overflow-x:hidden;
+}
+
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+header{
+    text-align:center;
+    padding:40px 20px;
+    animation: slideDown 1.5s ease;
+}
+
+header h1{
+    font-size:50px;
+    font-weight:800;
+    color:#fff;
+    letter-spacing:4px;
+    text-shadow:0 0 20px rgba(0,0,0,0.4);
+}
+
+@keyframes slideDown{
+    from{transform:translateY(-100px);opacity:0;}
+    to{transform:translateY(0);opacity:1;}
+}
+
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:40px;
+    padding:40px;
+}
+
+.cap-card{
+    width:400px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+    transition:0.4s;
+    animation: fadeUp 1.5s ease;
+}
+
+.cap-card:hover{
+    transform:translateY(-15px) scale(1.05);
+    box-shadow:0 15px 40px rgba(0,0,0,0.5);
+}
+
+@keyframes fadeUp{
+    from{transform:translateY(50px);opacity:0;}
+    to{transform:translateY(0);opacity:1;}
+}
+
+.cap-title{
+    text-align:center;
+    font-size:28px;
+    font-weight:700;
+    margin-bottom:20px;
+    color:#fff;
+}
+
+.orange{
+    background:linear-gradient(45deg,#ff8c00,#ff3c00);
+    padding:10px;
+    border-radius:12px;
+}
+
+.purple{
+    background:linear-gradient(45deg,#8e2de2,#4a00e0);
+    padding:10px;
+    border-radius:12px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+    color:#fff;
+}
+
+th,td{
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    font-weight:600;
+    border-bottom:2px solid rgba(255,255,255,0.5);
+}
+
+tr{
+    transition:0.3s;
+}
+
+tr:hover{
+    background:rgba(255,255,255,0.2);
+    transform:scale(1.03);
+    cursor:pointer;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    color:#fff;
+    font-weight:600;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>IPL 2026 ORANGE & PURPLE CAP</h1>
+</header>
+
+<div class="container">
+
+    <!-- Orange Cap -->
+    <div class="cap-card">
+        <div class="cap-title orange">Orange Cap - Top Run Scorers</div>
+        <table>
+            <tr>
+                <th>Rank</th>
+                <th>Player</th>
+                <th>Runs</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Virat Kohli</td>
+                <td>742</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Shubman Gill</td>
+                <td>689</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Jos Buttler</td>
+                <td>665</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>KL Rahul</td>
+                <td>620</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Ruturaj Gaikwad</td>
+                <td>601</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Purple Cap -->
+    <div class="cap-card">
+        <div class="cap-title purple">Purple Cap - Top Wicket Takers</div>
+        <table>
+            <tr>
+                <th>Rank</th>
+                <th>Player</th>
+                <th>Wickets</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Jasprit Bumrah</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mohammed Shami</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rashid Khan</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Yuzvendra Chahal</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Kagiso Rabada</td>
+                <td>20</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<footer>
+    © IPL 2026 | Official Orange & Purple Cap Rankings
+</footer>
+
+</body>
+</html>

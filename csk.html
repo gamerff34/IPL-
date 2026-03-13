@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CSK Playing XI</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(-45deg,#fdd835,#fbc02d,#ffb300,#f9a825);
+background-size:400% 400%;
+animation:bgmove 12s ease infinite;
+}
+
+@keyframes bgmove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+header{
+background:#000;
+padding:10px 0;
+}
+
+.navbar-brand{
+font-weight:700;
+color:#ffd700;
+}
+
+h1{
+text-align:center;
+padding:25px;
+font-size:40px;
+color:#111;
+}
+
+.players{
+padding:40px;
+}
+
+.card{
+border:none;
+border-radius:20px;
+background:rgba(255,255,255,0.25);
+backdrop-filter:blur(15px);
+text-align:center;
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-12px) scale(1.05);
+box-shadow:0 20px 40px rgba(0,0,0,0.3);
+}
+
+.card img{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+margin:15px auto;
+border:4px solid white;
+}
+
+.card h3{
+font-size:20px;
+margin-top:10px;
+}
+
+.card p{
+font-size:14px;
+color:#333;
+}
+
+button{
+margin-top:10px;
+}
+
+footer{
+text-align:center;
+padding:15px;
+background:rgba(255,255,255,0.3);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark container">
+<a class="navbar-brand" href="#">CSK Squad</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="ipl.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="teamss.html">Teams</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="points.html">Points</a>
+</li>
+
+</ul>
+</div>
+</nav>
+</header>
+
+<h1>Chennai Super Kings Playing XI</h1>
+
+<div class="container players">
+
+<div class="row g-4">
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg4B_q3-1bi0r_MEE2tGAJYeZvgKoIVBh6WQ&s">
+<h3>MS Dhoni</h3>
+<p>Wicketkeeper Batsman</p>
+<button class="btn btn-warning" onclick="showPlayer('MS Dhoni')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRanQERZJ4Qhx4M3g3xLIdaOI3lUwemVvPIyw&s">
+<h3>Ruturaj Gaikwad</h3>
+<p>Opening Batsman</p>
+<button class="btn btn-warning" onclick="showPlayer('Ruturaj Gaikwad')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREdCc6o0V15HYS4vv_HFww4fUehf5t9ByGxA&s">
+<h3>Devon Conway</h3>
+<p>Top Order Batter</p>
+<button class="btn btn-warning" onclick="showPlayer('Devon Conway')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGsxQpnbZyU0mtKlvBgnhPErZiGHehmb4YuA&s">
+<h3>Shivam Dube</h3>
+<p>All Rounder</p>
+<button class="btn btn-warning" onclick="showPlayer('Shivam Dube')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJkxTMjhS4kIRRrQH05NHE8XtkWJSMa_158w&s">
+<h3>Ravindra Jadeja</h3>
+<p>All Rounder</p>
+<button class="btn btn-warning" onclick="showPlayer('Ravindra Jadeja')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuR3tTZMwvakVyrYES4GxtVlB1Oyqkreny7A&s">
+<h3>Moeen Ali</h3>
+<p>All Rounder</p>
+<button class="btn btn-warning" onclick="showPlayer('Moeen Ali')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjZaHtam2iZGL4T5_8H2r2tcWcy1G33_l9lQ&s">
+<h3>Deepak Chahar</h3>
+<p>Fast Bowler</p>
+<button class="btn btn-warning" onclick="showPlayer('Deepak Chahar')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShsdqc3EeBZrG7VzuFFMtxArImTVyW9N2VTQ&s">
+<h3>Tushar Deshpande</h3>
+<p>Bowler</p>
+<button class="btn btn-warning" onclick="showPlayer('Tushar Deshpande')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwM0pJSNFicv4rb-g6qgF8_K6BSWn0K9e9IA&s">
+<h3>Maheesh Theekshana</h3>
+<p>Spinner</p>
+<button class="btn btn-warning" onclick="showPlayer('Maheesh Theekshana')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://ipltable.in/wp-content/uploads/2024/02/image-33-700x700.jpeg">
+<h3>Ajinkya Rahane</h3>
+<p>Batsman</p>
+<button class="btn btn-warning" onclick="showPlayer('Ajinkya Rahane')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4TerGmA61_rrVaNBeBHejm5J60vzQs0rWTg&s">
+<h3>Matheesha Pathirana</h3>
+<p>Fast Bowler</p>
+<button class="btn btn-warning" onclick="showPlayer('Matheesha Pathirana')">Details</button>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 CSK Fan Page | IPL Champions
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+function showPlayer(name){
+alert(name + " is an important player for Chennai Super Kings.");
+}
+
+</script>
+
+</body>
+</html>

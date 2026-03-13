@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gujarat Titans - IPL Team</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(135deg,#0f3057,#00587a);
+background-size:400% 400%;
+animation:bgmove 10s ease infinite;
+color:white;
+}
+
+@keyframes bgmove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+header{
+background:rgba(0,0,0,0.6);
+padding:15px;
+text-align:center;
+}
+
+header a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-size:18px;
+font-weight:500;
+}
+
+header a:hover{
+color:#ffd700;
+}
+
+h1{
+text-align:center;
+margin-top:30px;
+font-size:42px;
+font-weight:700;
+letter-spacing:1px;
+}
+
+.players{
+padding:40px 20px;
+}
+
+.player-card{
+background:rgba(255,255,255,0.12);
+backdrop-filter:blur(12px);
+border-radius:18px;
+padding:15px;
+text-align:center;
+transition:0.4s;
+box-shadow:0 0 18px rgba(255,255,255,0.3);
+}
+
+.player-card:hover{
+transform:translateY(-8px) scale(1.05);
+box-shadow:0 0 30px rgba(255,255,255,0.5);
+}
+
+.player-card img{
+width:100%;
+border-radius:12px;
+margin-bottom:10px;
+}
+
+.player-card h4{
+font-size:20px;
+margin-top:5px;
+font-weight:600;
+}
+
+.player-card p{
+font-size:14px;
+opacity:0.9;
+}
+
+button{
+margin-top:8px;
+}
+
+footer{
+margin-top:40px;
+padding:15px;
+text-align:center;
+background:rgba(0,0,0,0.6);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<a href="#">Home</a>
+<a href="#">Teams</a>
+<a href="#">Schedule</a>
+<a href="#">Points Table</a>
+<a href="#">Stats</a>
+</header>
+
+<h1>Gujarat Titans (GT) - Playing XI</h1>
+
+<div class="container players">
+<div class="row g-4">
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiCSjagPIC1aH5jOEd1RarshRUaG02SSscFg&s">
+<h4>Shubman Gill</h4>
+<p>Captain and stylish top-order batsman.</p>
+<button class="btn btn-warning btn-sm" onclick="showPlayer('Shubman Gill')">View</button>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="player-card">
+<img src="https://www.gujarattitansipl.com/static-assets/images/players/4508.png?v=5.88">
+<h4>Wriddhiman Saha</h4>
+<p>Experienced wicketkeeper batsman.</p>
+<button class="btn btn-warning btn-sm" onclick="showPlayer('Wriddhiman Saha')">View</button>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZtPwntDe1jskFSq9OElqwWHAaD9T_7qsLPw&s">
+<h4>David Miller</h4>
+<p>Powerful finisher from South Africa.</p>
+<button class="btn btn-warning btn-sm" onclick="showPlayer('David Miller')">View</button>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="player-card">
+<img src="https://www.gujarattitansipl.com/static-assets/images/players/61738.png?v=5.91">
+<h4>Vijay Shankar</h4>
+<p>Reliable batting all-rounder.</p>
+<button class="btn btn-warning btn-sm" onclick="showPlayer('Vijay Shankar')">View</button>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlTMankHsIiWVwL71w6x9QDcBxk8UuN3V_xg&s">
+<h4>Rahul Tewatia</h4>
+<p>All-rounder famous for match-winning finishes.</p>
+<button class="btn btn-warning btn-sm" onclick="showPlayer('Rahul Tewatia')">View</button>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIbrbR07VN_oCVeiExMpDl7_--rdcDgv36Kg&s">
+<h4>Rashid Khan</h4>
+<p>World-class leg spinner and game changer.</p>
+<button class="btn btn-warning btn-sm" onclick="showPlayer('Rashid Khan')">View</button>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="player-card">
+<img src="https://www.gujarattitansipl.com/static-assets/images/players/28994.png?v=5.91">
+<h4>Mohammed Shami</h4>
+<p>Experienced fast bowler and powerplay specialist.</p>
+<button class="btn btn-warning btn-sm" onclick="showPlayer('Mohammed Shami')">View</button>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_NZftPFnJOnZIjBtDw-HzazEI-d1FLacrwA&s">
+<h4>Mohit Sharma</h4>
+<p>Right-arm pacer effective in death overs.</p>
+<button class="btn btn-warning btn-sm" onclick="showPlayer('Mohit Sharma')">View</button>
+</div>
+</div>
+
+</div>
+</div>
+
+<footer>
+© 2026 IPL Fan Portal
+</footer>
+
+<script>
+
+function showPlayer(name){
+alert(name + " is part of Gujarat Titans Playing XI");
+}
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

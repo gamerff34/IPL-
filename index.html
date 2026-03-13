@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IPL Fan Portal</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+}
+
+.navbar{
+background:rgba(0,0,0,0.85);
+}
+
+.trophy{
+text-align:center;
+padding:60px 20px;
+}
+
+.trophy h2{
+font-size:48px;
+font-weight:700;
+letter-spacing:2px;
+}
+
+.trophy img{
+width:300px;
+margin:20px 0;
+transition:transform 0.4s;
+}
+
+.trophy img:hover{
+transform:scale(1.1);
+}
+
+.trophy p{
+font-size:22px;
+color:#ffd700;
+}
+
+.portal-btn{
+margin:10px;
+}
+
+footer{
+background:black;
+text-align:center;
+padding:15px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+.trophy h2{
+font-size:34px;
+}
+
+.trophy img{
+width:200px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+
+<a class="navbar-brand" href="#">IPL Fan Portal</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="ipl.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="teamss.html"target="_blank">Teams</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="schedule.html"target="_blank">Schedule</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="points.html"target="_blank">Points Table</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="stats.html"target="_blank">Rankings</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="orange cap.html"target="_blank">Orange and Purple Cap</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="https://www.bookmyshow.com/" target="_blank">Book Tickets</a>
+</li>
+
+</ul>
+
+</div>
+</div>
+</nav>
+
+<section class="trophy container">
+
+<h2>Indian Premier League</h2>
+
+<img src="https://toppng.com/uploads/preview/ipl-trophy-png-2018-indian-premier-league-11715891563q59jsolebc.png">
+
+<p>Chasing Glory Since 2008</p>
+
+<div class="mt-4">
+
+<button class="btn btn-warning portal-btn" onclick="showMessage()">Why IPL is Special</button>
+
+<button class="btn btn-success portal-btn" onclick="visitTeams()">Explore Teams</button>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 IPL Fan Portal
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+function showMessage(){
+alert("IPL is one of the most exciting cricket leagues in the world with players from many countries.");
+}
+
+function visitTeams(){
+window.location.href="teamss.html";
+}
+
+</script>
+
+</body>
+</html>

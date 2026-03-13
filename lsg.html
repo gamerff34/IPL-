@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lucknow Super Giants - IPL Team</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(135deg,#00b4d8,#03045e);
+background-size:400% 400%;
+animation:bgmove 10s ease infinite;
+color:white;
+}
+
+@keyframes bgmove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+header{
+background:rgba(0,0,0,0.6);
+padding:15px;
+text-align:center;
+}
+
+header a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-size:18px;
+font-weight:500;
+}
+
+header a:hover{
+color:#ffd60a;
+}
+
+h1{
+text-align:center;
+margin-top:30px;
+font-size:42px;
+font-weight:700;
+letter-spacing:1px;
+}
+
+.players{
+padding:40px 20px;
+}
+
+.player-card{
+background:rgba(255,255,255,0.12);
+backdrop-filter:blur(12px);
+border-radius:18px;
+padding:15px;
+text-align:center;
+transition:0.4s;
+box-shadow:0 0 18px rgba(255,255,255,0.3);
+}
+
+.player-card:hover{
+transform:translateY(-8px) scale(1.05);
+box-shadow:0 0 30px rgba(255,255,255,0.5);
+}
+
+.player-card img{
+width:100%;
+border-radius:12px;
+margin-bottom:10px;
+}
+
+.player-card h4{
+font-size:20px;
+font-weight:600;
+}
+
+.player-card p{
+font-size:14px;
+opacity:0.9;
+}
+
+button{
+margin-top:8px;
+}
+
+footer{
+margin-top:40px;
+padding:15px;
+text-align:center;
+background:rgba(0,0,0,0.6);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<a href="#">Home</a>
+<a href="#">Teams</a>
+<a href="#">Schedule</a>
+<a href="#">Points Table</a>
+<a href="#">Stats</a>
+</header>
+
+<h1>Lucknow Super Giants (LSG) - Playing XI</h1>
+
+<div class="container players">
+
+<div class="row g-4">
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="player-card">
+<img src="https://www.lucknowsupergiants.in/static-assets/images/players/60122.png?v=12.82">
+<h4>KL Rahul</h4>
+<p>Captain and dependable top-order batsman.</p>
+<button class="btn btn-warning btn-sm" onclick="showPlayer('KL Rahul')">View</button>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShTcAlfDhLy2OZePLABT-WaTKA-ZEsp204XA&s">
+<h4>Quinton de Kock</h4>
+<p>Explosive wicketkeeper-batsman.</p>
+<button class="btn btn-warning btn-sm" onclick="showPlayer('Quinton de Kock')">View</button>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="player-card">
+<img src="https://www.lucknowsupergiants.in/static-assets/images/players/63748.png?v=12.82">
+<h4>Deepak Hooda</h4>
+<p>Middle-order batsman and off-spinner.</p>
+<button class="btn btn-warning btn-sm" onclick="showPlayer('Deepak Hooda')">View</button>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0leCkhwS-aEdWx1leYIn0aN0FEU954NDXxA&s">
+<h4>Marcus Stoinis</h4>
+<p>Power-hitting all-rounder.</p>
+<button class="btn btn-warning btn-sm" onclick="showPlayer('Marcus Stoinis')">View</button>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-05STVFu-rZFt1kws5hkzoGf4sEtjFNbzKQ&s">
+<h4>Nicholas Pooran</h4>
+<p>Aggressive finisher and wicketkeeper.</p>
+<button class="btn btn-warning btn-sm" onclick="showPlayer('Nicholas Pooran')">View</button>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="player-card">
+<img src="https://www.lucknowsupergiants.in/static-assets/images/players/63788.png?v=12.82">
+<h4>Krunal Pandya</h4>
+<p>All-rounder contributing with bat and spin.</p>
+<button class="btn btn-warning btn-sm" onclick="showPlayer('Krunal Pandya')">View</button>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQvLEQRAinM5V7CwTqzdau9AqiOC7erIisKw&s">
+<h4>Ravi Bishnoi</h4>
+<p>Young leg spinner and wicket-taker.</p>
+<button class="btn btn-warning btn-sm" onclick="showPlayer('Ravi Bishnoi')">View</button>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT61NLgM2DT5tYUhLKRjLyylZzRbxc4wTb_3A&s">
+<h4>Mark Wood</h4>
+<p>Express fast bowler.</p>
+<button class="btn btn-warning btn-sm" onclick="showPlayer('Mark Wood')">View</button>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjUHY8oM0UEd8qMT0VqWIEd-0XJ-SbTWcTBQ&s">
+<h4>Avesh Khan</h4>
+<p>Right-arm pacer known for death overs.</p>
+<button class="btn btn-warning btn-sm" onclick="showPlayer('Avesh Khan')">View</button>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_PUApQOKvyPu1ePSphDJpA_-kaWO9Ud0ssA&s">
+<h4>Mohsin Khan</h4>
+<p>Left-arm fast bowler with swing.</p>
+<button class="btn btn-warning btn-sm" onclick="showPlayer('Mohsin Khan')">View</button>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="player-card">
+<img src="https://ipltable.in/wp-content/uploads/2024/03/image-700x700.jpeg">
+<h4>Ayush Badoni</h4>
+<p>Young middle-order batsman.</p>
+<button class="btn btn-warning btn-sm" onclick="showPlayer('Ayush Badoni')">View</button>
+</div>
+</div>
+
+</div>
+</div>
+
+<footer>
+© 2026 IPL Fan Portal
+</footer>
+
+<script>
+
+function showPlayer(name){
+alert(name + " is part of Lucknow Super Giants Playing XI");
+}
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

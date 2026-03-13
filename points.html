@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>IPL 2026 Points Table</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+min-height:100vh;
+font-family:'Segoe UI',sans-serif;
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+color:white;
+}
+
+header{
+background:rgba(0,0,0,0.7);
+padding:15px;
+text-align:center;
+}
+
+header a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-size:18px;
+}
+
+header a:hover{
+color:#ffcc00;
+}
+
+h1{
+text-align:center;
+margin:40px 0;
+font-size:48px;
+letter-spacing:3px;
+color:#ffcc00;
+text-shadow:0 0 20px #ff0080,0 0 40px #00f2ff;
+}
+
+.table-container{
+width:95%;
+max-width:1100px;
+margin:auto;
+padding-bottom:40px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+backdrop-filter:blur(10px);
+background:rgba(255,255,255,0.08);
+border-radius:15px;
+overflow:hidden;
+}
+
+th,td{
+padding:14px;
+text-align:center;
+}
+
+th{
+background:linear-gradient(135deg,#ff512f,#dd2476);
+font-weight:600;
+}
+
+tr:nth-child(even){
+background:rgba(255,255,255,0.05);
+}
+
+tr:hover{
+background:linear-gradient(135deg,#24c6dc,#514a9d);
+transform:scale(1.02);
+transition:0.3s;
+}
+
+.top{
+background:linear-gradient(135deg,#00c9ff,#92fe9d);
+color:black;
+font-weight:bold;
+}
+
+button{
+margin:10px;
+}
+
+footer{
+text-align:center;
+padding:15px;
+background:rgba(0,0,0,0.7);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<a href="#">Home</a>
+<a href="#">Teams</a>
+<a href="#">Schedule</a>
+<a href="#">Points Table</a>
+<a href="#">Stats</a>
+</header>
+
+<h1>IPL 2026 Points Table</h1>
+
+<div class="container table-container">
+
+<div class="text-center mb-3">
+<button class="btn btn-warning btn-sm" onclick="highlightTop()">Highlight Top 4</button>
+<button class="btn btn-light btn-sm" onclick="resetTable()">Reset</button>
+</div>
+
+<div class="table-responsive">
+
+<table class="table table-borderless text-white align-middle">
+
+<thead>
+<tr>
+<th>Pos</th>
+<th>Team</th>
+<th>Played</th>
+<th>Won</th>
+<th>Lost</th>
+<th>Points</th>
+<th>NRR</th>
+</tr>
+</thead>
+
+<tbody id="pointsTable">
+
+<tr class="top">
+<td>1</td>
+<td>Chennai Super Kings</td>
+<td>10</td>
+<td>8</td>
+<td>2</td>
+<td>16</td>
+<td>+1.245</td>
+</tr>
+
+<tr class="top">
+<td>2</td>
+<td>Mumbai Indians</td>
+<td>10</td>
+<td>7</td>
+<td>3</td>
+<td>14</td>
+<td>+0.980</td>
+</tr>
+
+<tr class="top">
+<td>3</td>
+<td>Royal Challengers Bengaluru</td>
+<td>10</td>
+<td>6</td>
+<td>4</td>
+<td>12</td>
+<td>+0.620</td>
+</tr>
+
+<tr class="top">
+<td>4</td>
+<td>Kolkata Knight Riders</td>
+<td>10</td>
+<td>6</td>
+<td>4</td>
+<td>12</td>
+<td>+0.410</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>Gujarat Titans</td>
+<td>10</td>
+<td>5</td>
+<td>5</td>
+<td>10</td>
+<td>+0.050</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>Lucknow Super Giants</td>
+<td>10</td>
+<td>4</td>
+<td>6</td>
+<td>8</td>
+<td>-0.210</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td>Rajasthan Royals</td>
+<td>10</td>
+<td>4</td>
+<td>6</td>
+<td>8</td>
+<td>-0.350</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td>Sunrisers Hyderabad</td>
+<td>10</td>
+<td>3</td>
+<td>7</td>
+<td>6</td>
+<td>-0.640</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td>Punjab Kings</td>
+<td>10</td>
+<td>3</td>
+<td>7</td>
+<td>6</td>
+<td>-0.880</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td>Delhi Capitals</td>
+<td>10</td>
+<td>2</td>
+<td>8</td>
+<td>4</td>
+<td>-1.120</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+</div>
+
+<footer>
+© 2026 IPL Fan Portal
+</footer>
+
+<script>
+
+function highlightTop(){
+let rows=document.querySelectorAll("#pointsTable tr");
+for(let i=0;i<4;i++){
+rows[i].style.background="gold";
+rows[i].style.color="black";
+}
+}
+
+function resetTable(){
+location.reload();
+}
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

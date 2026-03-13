@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sunrisers Hyderabad - Playing XI</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(-45deg,#000000,#e65100,#ff6f00,#ff8f00);
+background-size:400% 400%;
+animation:bgmove 12s ease infinite;
+color:white;
+}
+
+@keyframes bgmove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+header{
+text-align:center;
+padding:30px 10px;
+}
+
+header h1{
+font-size:42px;
+font-weight:700;
+letter-spacing:1px;
+}
+
+header p{
+font-size:16px;
+opacity:0.9;
+}
+
+.team{
+padding:40px 20px;
+}
+
+.player-card{
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(12px);
+border-radius:18px;
+padding:20px;
+text-align:center;
+transition:0.4s;
+box-shadow:0 8px 20px rgba(0,0,0,0.4);
+}
+
+.player-card:hover{
+transform:translateY(-10px) scale(1.05);
+box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
+
+.player-card img{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid white;
+margin-bottom:10px;
+}
+
+.player-card h5{
+margin-top:10px;
+font-weight:600;
+}
+
+.player-card p{
+font-size:14px;
+color:#f1f1f1;
+}
+
+footer{
+text-align:center;
+padding:15px;
+margin-top:30px;
+background:rgba(0,0,0,0.25);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Sunrisers Hyderabad - Playing XI</h1>
+<p>Orange Army | IPL Champions 2016</p>
+</header>
+
+<section class="team container">
+
+<div class="row g-4">
+
+<div class="col-md-4 col-lg-3">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9nkSiV6jtCApLRnOFSKUAUQspjV5hpJOdBQ&s">
+<h5>Pat Cummins</h5>
+<p>Captain | Pace All Rounder</p>
+<button class="btn btn-warning btn-sm" onclick="player('Pat Cummins')">View</button>
+</div>
+</div>
+
+<div class="col-md-4 col-lg-3">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLVk-ZJyQusn6ZkR9lIKFQqHCMu8ZnW8LyBA&s">
+<h5>Abhishek Sharma</h5>
+<p>Aggressive Opening Batter</p>
+<button class="btn btn-warning btn-sm" onclick="player('Abhishek Sharma')">View</button>
+</div>
+</div>
+
+<div class="col-md-4 col-lg-3">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmq_6XQsm4hWwzISeVFBzDbOycuQrKOf7yMg&s">
+<h5>Travis Head</h5>
+<p>Explosive Opener</p>
+<button class="btn btn-warning btn-sm" onclick="player('Travis Head')">View</button>
+</div>
+</div>
+
+<div class="col-md-4 col-lg-3">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZDSMS7c7Qga5zOuRrtSZSOunqByoBQRPGkQ&s">
+<h5>Aiden Markram</h5>
+<p>Middle Order Batter</p>
+<button class="btn btn-warning btn-sm" onclick="player('Aiden Markram')">View</button>
+</div>
+</div>
+
+<div class="col-md-4 col-lg-3">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiFL5rG_FgzbJjvdATUOQrhdsE90YPI4fuug&s">
+<h5>Heinrich Klaasen</h5>
+<p>Wicketkeeper | Finisher</p>
+<button class="btn btn-warning btn-sm" onclick="player('Heinrich Klaasen')">View</button>
+</div>
+</div>
+
+<div class="col-md-4 col-lg-3">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOj89kwHmo6-yInutjws0JwtlTeniH8Qidog&s">
+<h5>Rahul Tripathi</h5>
+<p>Attacking Middle Order</p>
+<button class="btn btn-warning btn-sm" onclick="player('Rahul Tripathi')">View</button>
+</div>
+</div>
+
+<div class="col-md-4 col-lg-3">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOLVADYKf_PeRHa7TiOGru_QjbTXhEfivT6A&s">
+<h5>Washington Sundar</h5>
+<p>Spin All Rounder</p>
+<button class="btn btn-warning btn-sm" onclick="player('Washington Sundar')">View</button>
+</div>
+</div>
+
+<div class="col-md-4 col-lg-3">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU78JaXO7f-GjZnv6u06mB9XQRGwLMsaFG_g&s">
+<h5>Bhuvneshwar Kumar</h5>
+<p>Swing Fast Bowler</p>
+<button class="btn btn-warning btn-sm" onclick="player('Bhuvneshwar Kumar')">View</button>
+</div>
+</div>
+
+<div class="col-md-4 col-lg-3">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGMpK4ox6E2YHhbTqqWpk8XQMqPO3ysPIucQ&s">
+<h5>T Natarajan</h5>
+<p>Yorker Specialist</p>
+<button class="btn btn-warning btn-sm" onclick="player('T Natarajan')">View</button>
+</div>
+</div>
+
+<div class="col-md-4 col-lg-3">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3yFnizhB7evN3Owwv_cNExIPCzYeljF0dYg&s">
+<h5>Umran Malik</h5>
+<p>Express Pace Bowler</p>
+<button class="btn btn-warning btn-sm" onclick="player('Umran Malik')">View</button>
+</div>
+</div>
+
+<div class="col-md-4 col-lg-3">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGkc3X2FPF9LFInUlEEYH4nqnkKJfEXYfg5A&s">
+<h5>Mayank Agarwal</h5>
+<p>Top Order Batter</p>
+<button class="btn btn-warning btn-sm" onclick="player('Mayank Agarwal')">View</button>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Sunrisers Hyderabad Fan Page | Orange Army
+</footer>
+
+<script>
+
+function player(name){
+alert(name + " is part of Sunrisers Hyderabad Playing XI.");
+}
+
+</script>
+
+</body>
+</html>

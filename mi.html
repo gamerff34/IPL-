@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mumbai Indians Playing XI</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(-45deg,#0d47a1,#1565c0,#1976d2,#1e88e5);
+background-size:400% 400%;
+animation:bgmove 12s ease infinite;
+}
+
+@keyframes bgmove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+header{
+background:#021c4f;
+}
+
+.navbar-brand{
+font-weight:700;
+color:#ffcc00;
+}
+
+h1{
+text-align:center;
+padding:25px;
+font-size:40px;
+color:white;
+}
+
+.players{
+padding:40px;
+}
+
+.card{
+border:none;
+border-radius:20px;
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(15px);
+text-align:center;
+transition:0.4s;
+color:white;
+}
+
+.card:hover{
+transform:translateY(-12px) scale(1.05);
+box-shadow:0 20px 40px rgba(0,0,0,0.5);
+}
+
+.card img{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+margin:15px auto;
+border:4px solid white;
+}
+
+.card h3{
+font-size:20px;
+margin-top:10px;
+}
+
+.card p{
+font-size:14px;
+color:#e3f2fd;
+}
+
+button{
+margin-top:10px;
+}
+
+footer{
+text-align:center;
+padding:15px;
+background:rgba(255,255,255,0.15);
+color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark container">
+<a class="navbar-brand" href="#">Mumbai Indians</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="ipl.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="teamss.html">Teams</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="points.html">Points</a>
+</li>
+
+</ul>
+
+</div>
+</nav>
+</header>
+
+<h1>Mumbai Indians Playing XI</h1>
+
+<div class="container players">
+
+<div class="row g-4">
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3sfdazCnce91FbLAu66M2aa49A2OJ_UfWRg&s">
+<h3>Rohit Sharma</h3>
+<p>Explosive opening batsman</p>
+<button class="btn btn-warning" onclick="showPlayer('Rohit Sharma')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMl97E5YCG_qhtODqspjhQbiVKdgkGSQoj2w&s">
+<h3>Hardik Pandya</h3>
+<p>Captain and powerful all rounder</p>
+<button class="btn btn-warning" onclick="showPlayer('Hardik Pandya')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://preview.redd.it/how-do-you-guys-see-about-ishan-kishans-time-with-the-v0-dpen14iahd3d1.jpeg?width=640&crop=smart&auto=webp&s=1c69e372d21745b1f803f653968d17da58a92b79">
+<h3>Ishan Kishan</h3>
+<p>Wicketkeeper and aggressive batter</p>
+<button class="btn btn-warning" onclick="showPlayer('Ishan Kishan')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd8xTfYYhl_FUTj6sC-6u1EoStQxv22EqWSQ&s">
+<h3>Suryakumar Yadav</h3>
+<p>Innovative 360 degree stroke player</p>
+<button class="btn btn-warning" onclick="showPlayer('Suryakumar Yadav')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScz5Jl_CypAy_5LftvQh3pd-CzZ-nr7XuJsg&s">
+<h3>Tilak Varma</h3>
+<p>Young and dependable batter</p>
+<button class="btn btn-warning" onclick="showPlayer('Tilak Varma')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi7VTkVQmMO3Osomfqz0pjq9WDSSiBLeg6UQ&s">
+<h3>Tim David</h3>
+<p>Powerful middle order hitter</p>
+<button class="btn btn-warning" onclick="showPlayer('Tim David')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOhggyxRW4R8C5stRZeM6xF_-MLpKGeTTnNQ&s">
+<h3>Jasprit Bumrah</h3>
+<p>World class fast bowler</p>
+<button class="btn btn-warning" onclick="showPlayer('Jasprit Bumrah')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQwvaeBntGIorCXLf5vpcpBBM2dBt9e5ieWg&s">
+<h3>Piyush Chawla</h3>
+<p>Experienced leg spinner</p>
+<button class="btn btn-warning" onclick="showPlayer('Piyush Chawla')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://www.mumbaiindians.com/static-assets/waf-images/6d/89/60/4-3/592-444/a4aGZ08G1i.jpg">
+<h3>Gerald Coetzee</h3>
+<p>Fast pace bowler</p>
+<button class="btn btn-warning" onclick="showPlayer('Gerald Coetzee')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://www.iplbetonline.in/wp-content/uploads/2023/04/20681-780x780.png">
+<h3>Akash Madhwal</h3>
+<p>Death over specialist</p>
+<button class="btn btn-warning" onclick="showPlayer('Akash Madhwal')">Details</button>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="card p-3">
+<img src="https://www.mumbaiindians.com/static-assets/waf-images/c4/25/75/4-3/592-444/H2HQofhaOx.png">
+<h3>Nehal Wadhera</h3>
+<p>Young left handed batter</p>
+<button class="btn btn-warning" onclick="showPlayer('Nehal Wadhera')">Details</button>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Mumbai Indians Fan Page | 5 Time IPL Champions
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+function showPlayer(name){
+alert(name + " is a key player for Mumbai Indians.");
+}
+
+</script>
+
+</body>
+</html>

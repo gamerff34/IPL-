@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Delhi Capitals - Playing XI</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(-45deg,#0d47a1,#1565c0,#b71c1c,#e53935);
+background-size:400% 400%;
+animation:bgmove 12s ease infinite;
+color:white;
+}
+
+@keyframes bgmove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+header{
+text-align:center;
+padding:30px 10px;
+}
+
+header h1{
+font-size:42px;
+font-weight:700;
+letter-spacing:1px;
+}
+
+header p{
+font-size:16px;
+opacity:0.9;
+}
+
+.team{
+padding:40px 20px;
+}
+
+.player-card{
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(12px);
+border-radius:18px;
+padding:20px;
+text-align:center;
+transition:0.4s;
+box-shadow:0 8px 20px rgba(0,0,0,0.4);
+}
+
+.player-card:hover{
+transform:translateY(-10px) scale(1.05);
+box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
+
+.player-card img{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid white;
+margin-bottom:10px;
+}
+
+.player-card h5{
+margin-top:10px;
+font-weight:600;
+}
+
+.player-card p{
+font-size:14px;
+color:#f1f1f1;
+}
+
+footer{
+text-align:center;
+padding:15px;
+margin-top:30px;
+background:rgba(0,0,0,0.25);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Delhi Capitals - Playing XI</h1>
+<p>IPL Team | Blue & Red Army</p>
+</header>
+
+<section class="team container">
+
+<div class="row g-4">
+
+<div class="col-md-4 col-lg-3">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjvaEBIVjy6DClTgYy7KHkwxoy0N5QWwQxxw&s">
+<h5>Rishabh Pant</h5>
+<p>Captain | Wicketkeeper Batter</p>
+<button class="btn btn-danger btn-sm" onclick="player('Rishabh Pant')">View</button>
+</div>
+</div>
+
+<div class="col-md-4 col-lg-3">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy2UoIz9RctCjtDw0iTDr9W8lq_jMqGo0JpQ&s">
+<h5>David Warner</h5>
+<p>Left Hand Opening Batter</p>
+<button class="btn btn-danger btn-sm" onclick="player('David Warner')">View</button>
+</div>
+</div>
+
+<div class="col-md-4 col-lg-3">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO8FOcrG-t8xbjHLMkPJd2Z3PKYkD51LcuaQ&s">
+<h5>Prithvi Shaw</h5>
+<p>Explosive Top Order Batter</p>
+<button class="btn btn-danger btn-sm" onclick="player('Prithvi Shaw')">View</button>
+</div>
+</div>
+
+<div class="col-md-4 col-lg-3">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST_g9cgHloSTifiSZL8r6lP2WTdxYxosg4yA&s">
+<h5>Mitchell Marsh</h5>
+<p>All Rounder | Power Hitter</p>
+<button class="btn btn-danger btn-sm" onclick="player('Mitchell Marsh')">View</button>
+</div>
+</div>
+
+<div class="col-md-4 col-lg-3">
+<div class="player-card">
+<img src="https://ipltable.in/wp-content/uploads/2024/02/image-62-700x700.jpeg">
+<h5>Axar Patel</h5>
+<p>Spin All Rounder</p>
+<button class="btn btn-danger btn-sm" onclick="player('Axar Patel')">View</button>
+</div>
+</div>
+
+<div class="col-md-4 col-lg-3">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3BdPeWcBfg_ShlOT1BJcl1uhXwd6_jWxBoA&s">
+<h5>Kuldeep Yadav</h5>
+<p>Left Arm Wrist Spinner</p>
+<button class="btn btn-danger btn-sm" onclick="player('Kuldeep Yadav')">View</button>
+</div>
+</div>
+
+<div class="col-md-4 col-lg-3">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ04D3cenihT3ZqI21oS1ugnawMwhbZcJLmfA&s">
+<h5>Anrich Nortje</h5>
+<p>Express Fast Bowler</p>
+<button class="btn btn-danger btn-sm" onclick="player('Anrich Nortje')">View</button>
+</div>
+</div>
+
+<div class="col-md-4 col-lg-3">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO8JJl-37c7I7KEyPurFNGStrtbtRYzd6YAg&s">
+<h5>Khaleel Ahmed</h5>
+<p>Left Arm Swing Bowler</p>
+<button class="btn btn-danger btn-sm" onclick="player('Khaleel Ahmed')">View</button>
+</div>
+</div>
+
+<div class="col-md-4 col-lg-3">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGPqngt55Rujw3gMx2pWrcF2l6XRWw8ZwImQ&s">
+<h5>Lalit Yadav</h5>
+<p>Utility All Rounder</p>
+<button class="btn btn-danger btn-sm" onclick="player('Lalit Yadav')">View</button>
+</div>
+</div>
+
+<div class="col-md-4 col-lg-3">
+<div class="player-card">
+<img src="https://iplcricbet.com/wp-content/uploads/2024/07/Ishant-Sharma.jpg">
+<h5>Ishant Sharma</h5>
+<p>Experienced Fast Bowler</p>
+<button class="btn btn-danger btn-sm" onclick="player('Ishant Sharma')">View</button>
+</div>
+</div>
+
+<div class="col-md-4 col-lg-3">
+<div class="player-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgVBnKUGvBQjHnNvaw_A9lKO7c6MwP2EqHlQ&s">
+<h5>Tristan Stubbs</h5>
+<p>Dynamic Middle Order Batter</p>
+<button class="btn btn-danger btn-sm" onclick="player('Tristan Stubbs')">View</button>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Delhi Capitals Fan Page
+</footer>
+
+<script>
+
+function player(name){
+alert(name + " is part of Delhi Capitals Playing XI.");
+}
+
+</script>
+
+</body>
+</html>
